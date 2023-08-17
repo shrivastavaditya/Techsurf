@@ -9,17 +9,110 @@
 </head>
 
 <body class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
-    <div class="flex h-[100vh] text-white">
+    <div class="flex text-white">
         <div class="left bg-[#111827] w-1/12">
 
         </div>
         <div class="right w-11/12  text-white flex justify-center items-center flex-col">
-            <div class="text-center w-full text-4xl font-bold mb-10">
+            <div class="text-center w-full text-4xl font-bold mt-10 mb-10">
                 SmartPenCraft
             </div>
 
-            <div class="form">
+            <div class="flex w-10/12 justify-center items-center">
+                <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-purple-700 w-full p-8 rounded-2xl shadow-2xl text-white overflow-hidden">
+                    <div class="flex flex-col space-y-8 justify-around">
+                        <div>
+                            <h1 class="font-bold text-2xl tracking-wide justify-center items-center">
+                                Your Article:
+                            </h1>
+                            <p class="text-sm pt-2">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem dolores alias ut soluta dignissimos fuga voluptate necessitatibus perspiciatis esse omnis!
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="relative">
+                        <div class="absolute z-0 w-32 h-32 bg-fuchsia-500 rounded-full  -top-20">
+
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute z-0 w-32 h-32 bg-fuchsia-500 rounded-full -bottom-28">
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="relative z-10 bg-slate-400 p-8 rounded-2xl shadow-2xl text-gray-800 md:w-120">
+                            <form action="" class="flex flex-col space-y-4">
+                                <div>
+                                    <label for="" class="text-lg font-semibold"> 
+                                        Instruction / Description of Facts:
+                                    </label>
+                                    <textarea name="" id="" cols="30" rows="5" class="ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400" placeholder="Write the instructions or descriptions of the facts"></textarea>
+                                </div>
+                                <div>
+                                    <label for="language" class="text-lg font-semibold"> 
+                                        Language:
+                                    </label>
+                                    <select name="language" id="language" class="ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400">
+                                        <option value="1">Bulgarian</option>
+                                        <option value="2">Czech</option>
+                                        <option value="3">Danish</option>
+                                        <option value="4">German</option>
+                                        <option value="5">Greek</option>
+                                        <option value="6">English (Britain)</option>
+                                        <option value="7">English (American)</option>
+                                        <option value="8">Spanish</option>
+                                        <option value="9">Estonian</option>
+                                        <option value="10">Finnish</option>
+                                        <option value="11">French</option>
+                                        <option value="12">Hungarian</option>
+                                        <option value="13">Indonesian</option>
+                                        <option value="14">Italian</option>
+                                        <option value="15">Japanese</option>
+                                        <option value="16">Lithuanian</option>
+                                        <option value="17">Latvian</option>
+                                        <option value="18">Dutch</option>
+                                        <option value="19">Polish</option>
+                                        <option value="20">Portuguese</option>
+                                        <option value="21">Romanian</option>
+                                        <option value="22">Russian</option>
+                                        <option value="23">Slovak</option>
+                                        <option value="24">Slovenian</option>
+                                        <option value="25">Swedish</option>
+                                        <option value="26">Turkish</option>
+                                        <option value="27">Ukrainian</option>
+                                        <option value="28">Chinese</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="tone" class="text-lg font-semibold"> 
+                                        Tone of Voice:
+                                    </label>
+                                    <select name="tone" id="tone" class="ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400">
+                                        <option value="1">Neutral</option>
+                                        <option value="2">Assertive</option>
+                                        <option value="3">Convincing</option>
+                                        <option value="4">Formal</option>
+                                        <option value="5">Professional</option>
+                                        <option value="6">Humorous</option>
+                                        <option value="7">Passionate</option>
+                                        <option value="8">Happy</option>
+                                        <option value="9">Joyful</option>
+                                        <option value="10">Sad</option>
+                                        <option value="11">Angry</option>
+                                    </select>
+                                </div>
+                                <button class="inline-block self-end bg-purple-700 text-white font-semibold rounded-lg px-7 py-3 uppercase text-sm hover:scale-[1.09] transform transition duration-300">
+                                    Start Writing
+                                </button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
