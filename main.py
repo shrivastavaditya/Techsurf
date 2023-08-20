@@ -1,8 +1,9 @@
 from flask import Flask, render_template, jsonify, request
 from flask_pymongo import PyMongo
+import os
 import openai
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 
 
@@ -46,7 +47,7 @@ def news():
     qstn = mongo.db.qstn.find({})
     myQstn = [qst for qst in qstn]
     print(myQstn)
-    return render_template("news.html")
+    return render_template("news.html", myQstn= myQstn)
 
 @app.route('/social.html')
 def soc():
@@ -62,22 +63,28 @@ def qa():
         print(request.json)
         qstn = request.json.get("question")
         qst = mongo.db.qstn.find_one({"question": qstn})
-        print(qst)
+        #print(qst)
         if qst:
-            data={"result": f"{qst['answer']}"}
+            data={"question": qstn, "answer": f"{qst['answer']}"}
             return jsonify(data)
         else:
-            response = openai.Completion.create(
-               model="text-davinci-003",
-               prompt=qstn,
-               temperature=0.7,
-               max_tokens=256,
-               top_p=1,
-               frequency_penalty=0,
-               presence_penalty=0
-            )
-            data={"question": qstn, "answer": response["choices"][0]["text"]}
-            mongo.db.qstn.insert_one( {"question": qstn, "answer": response["choices"][0]["text"]} )
+            response = openai.ChatCompletion.create(
+              model="gpt-3.5-turbo",
+              messages=[
+                    {
+                     "role": "user",
+                     "content": qstn
+                    }
+                       ],
+              temperature=1,
+              max_tokens=256,
+              top_p=1,
+              frequency_penalty=0,
+              presence_penalty=0
+              )
+            print(response)
+            data={"question": qstn, "answer": response["choices"][0]["message"]["content"]}
+            mongo.db.qstn.insert_one( {"question": qstn, "answer": response["choices"][0]["message"]["content"]} )
             return jsonify(data)
     data={"result":"Aditya hi data hai"}
     return jsonify(data)

@@ -19,7 +19,7 @@ writeButton.addEventListener("click", async() => {
     document.getElementById("tone").value = "";
 
     //Full question for openAi
-    question = "Please write a news article on " + des + " in " + lang + " language in " + ton + " tone with proper indentation.";
+    question = "Please write a news article on " + des + " in " + lang + " language in " + ton + " tone in less than 125 words.";
     //alert(question)
 
     //Answer to be shown in the textarea ansbox
