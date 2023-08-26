@@ -9,11 +9,121 @@
 </head>
 
 <body class="h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
-    <div class="flex h-[100vh] text-white">
+    <div class="flex text-white">
         <div class="left bg-[#111827] w-1/12">
 
         </div>
+        <div class="right w-11/12  text-white flex justify-center items-center flex-col">
+            <div class="text-center w-full text-4xl font-bold mt-10 mb-10">
+                SmartPenCraft
+            </div>
+
+            <div class="flex w-10/12 justify-center items-center">
+                <div class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-purple-700 w-full p-8 rounded-2xl shadow-2xl text-white overflow-hidden">
+                    <div class="flex flex-col space-y-8 justify-around">
+                        <div>
+                            <h1 class="font-bold text-2xl tracking-wide justify-center items-center">
+                                Your Technical Content:
+                            </h1>
+                            <p class="text-sm pt-2">
+                                Provide detailed information and processes about your desired topic. "For example, if you want a technical manual on Litmus Paper Test, then you should select 'manual' option from the selection bar and write Litmus Paper Test the Description box.
+                            </p>
+                            <textarea name="" id="ansbox" cols="30" rows="18" class="text-gray-800 bg-pink-200  ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400" placeholder="Technical Content(example) :  
+Title: Comprehensive Guide to Litmus Paper Testing in the Chemistry Lab
+
+Introduction:
+Welcome to the comprehensive technical manual on Litmus Paper testing, an essential technique employed in the chemistry laboratory. This intuitive and efficient method allows researchers, students, and enthusiasts to determine the acidic or basic properties of a solution swiftly and accurately.
+                            
+Procedure:
+1. Begin by collecting the necessary reagents, including Litmus Paper strips and a range of solutions with different pH levels.
+2. Ensure a clean and sterile working environment to prevent contamination.
+3. Dip the Litmus Paper strip into the solution being tested, holding it for a few seconds....
+                            "></textarea>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute z-0 w-32 h-32 bg-fuchsia-500 rounded-full  -top-20">
+
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute z-0 w-32 h-32 bg-fuchsia-500 rounded-full -bottom-28">
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="relative z-10 bg-slate-400 p-8 rounded-2xl shadow-2xl text-gray-800 md:w-120">
+                            <form action="" class="flex flex-col space-y-4" onsubmit="return false">
+                                <div>
+                                    <label for="socialmedia" class="text-lg font-semibold"> 
+                                        What type of technical writing you want:
+                                    </label>
+                                    <select name="socialmedia" id="socialmedia" class="ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400">
+                                        <option value="documentation">Documentation</option>
+                                        <option value="manual">Manual</option>
+                                        <option value="guide">Guide</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="" class="text-lg font-semibold"> 
+                                        Description about your Process or Topic:
+                                    </label>
+                                    <textarea name="" id="description" cols="30" rows="5" class="ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400" placeholder="Write the desired topic and related processes on which you want the technical documentation, manuals or guides..."></textarea>
+                                </div>
+                                <div>
+                                    <label for="language" class="text-lg font-semibold"> 
+                                        Language:
+                                    </label>
+                                    <select name="language" id="language" class="ring-1 ring-gray-500 w-full rounded-lg p-4 m-2 outline-none focus:ring-2 focus:ring-purple-400">
+                                        <option value="English(Britain)">English (Britain)</option>
+                                        <option value="Hindi">Hindi</option>
+                                        <option value="Sanskrit">Sanskrit</option>
+                                        <option value="Bulgarian">Bulgarian</option>
+                                        <option value="Czech">Czech</option>
+                                        <option value="Danish">Danish</option>
+                                        <option value="German">German</option>
+                                        <option value="Greek">Greek</option>
+                                        <option value="English (American)">English (American)</option>
+                                        <option value="Spanish">Spanish</option>
+                                        <option value="Estonian">Estonian</option>
+                                        <option value="Finnish">Finnish</option>
+                                        <option value="French">French</option>
+                                        <option value="Hungarian">Hungarian</option>
+                                        <option value="Indonesian">Indonesian</option>
+                                        <option value="Italian">Italian</option>
+                                        <option value="Japanese">Japanese</option>
+                                        <option value="Lithuanian">Lithuanian</option>
+                                        <option value="Latvian">Latvian</option>
+                                        <option value="Dutch">Dutch</option>
+                                        <option value="Polish">Polish</option>
+                                        <option value="Portuguese">Portuguese</option>
+                                        <option value="Romanian">Romanian</option>
+                                        <option value="Russian">Russian</option>
+                                        <option value="Slovak">Slovak</option>
+                                        <option value="Slovenian">Slovenian</option>
+                                        <option value="Swedish">Swedish</option>
+                                        <option value="Turkish">Turkish</option>
+                                        <option value="Ukrainian">Ukrainian</option>
+                                        <option value="Chinese">Chinese</option>
+                                    </select>
+                                </div>
+
+                                <button id="writeButton" class="inline-block self-end bg-purple-700 text-white font-semibold rounded-lg px-7 py-3 uppercase text-sm hover:scale-[1.09] transform transition duration-300">
+                                    Start Writing
+                                </button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="/static/js/scripttech.js">
+    </script>
 
 </body>
 
