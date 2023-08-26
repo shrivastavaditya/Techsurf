@@ -12,11 +12,11 @@ async function postData(url = "", data = {}) {
 
 writeButton.addEventListener("click", async() => {
     des = document.getElementById("description").value;
-    lang = document.getElementById("language").value;
-    ton = document.getElementById("tone").value;
+    langf = document.getElementById("langf").value;
+    langs = document.getElementById("langs").value;
 
     //Full question for openAi
-    question = "Please write a news article on " + des + " in " + lang + " language in " + ton + " tone in less than 125 words and impressive title.";
+    question = "Please translate the given content from " + langf + " language to " + langs + " language: " + des;
     //alert(question)
 
     //Answer to be shown in the textarea ansbox

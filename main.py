@@ -3,7 +3,7 @@ from flask_pymongo import PyMongo
 import os
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 
 
 
@@ -32,7 +32,10 @@ def aca():
 
 @app.route('/blog.html')
 def blog():
-    return render_template("blog.html")
+    qstn = mongo.db.qstn.find({})
+    myQstn = [qst for qst in qstn]
+    print(myQstn)
+    return render_template("blog.html", myQstn= myQstn)
 
 @app.route('/ecom.html')
 def eco():
@@ -40,7 +43,10 @@ def eco():
 
 @app.route('/market.html')
 def mkt():
-    return render_template("market.html")
+    qstn = mongo.db.qstn.find({})
+    myQstn = [qst for qst in qstn]
+    print(myQstn)
+    return render_template("market.html", myQstn= myQstn)
 
 @app.route('/news.html')
 def news():
@@ -51,11 +57,17 @@ def news():
 
 @app.route('/social.html')
 def soc():
-    return render_template("social.html")
+    qstn = mongo.db.qstn.find({})
+    myQstn = [qst for qst in qstn]
+    print(myQstn)
+    return render_template("social.html", myQstn= myQstn)
 
 @app.route('/translate.html')
 def translation():
-    return render_template("translate.html")
+    qstn = mongo.db.qstn.find({})
+    myQstn = [qst for qst in qstn]
+    print(myQstn)
+    return render_template("translate.html", myQstn= myQstn)
 
 @app.route('/api',methods=["GET","POST"])
 def qa():
