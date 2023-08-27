@@ -608,12 +608,20 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -634,6 +642,10 @@ video {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .min-h-\[60vh\] {
@@ -664,6 +676,10 @@ video {
   width: 8rem;
 }
 
+.w-4 {
+  width: 1rem;
+}
+
 .w-\[92\%\] {
   width: 92%;
 }
@@ -678,6 +694,16 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
 .cursor-pointer {

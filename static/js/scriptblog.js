@@ -18,7 +18,9 @@ writeButton.addEventListener("click", async() => {
     ton = document.getElementById("tone").value;
     //document.getElementById("tone").value = "";
 
-    //Full question for openAi
+    document.querySelector(".btn2").style.display = "block"
+    document.querySelector(".writeButton").style.display = "none"
+        //Full question for openAi
     question = "Please write a blog on " + des + " in " + lang + " language in " + ton + " tone in less than 125 words.";
     //alert(question)
 
@@ -28,4 +30,6 @@ writeButton.addEventListener("click", async() => {
     //Answer to be shown in the textarea ansbox
     let result = await postData('/api', { "question": question })
     ansbox.innerHTML = result.answer
+    document.querySelector(".writeButton").style.display = "block"
+    document.querySelector(".btn2").style.display = "none"
 })

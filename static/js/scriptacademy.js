@@ -15,6 +15,9 @@ writeButton.addEventListener("click", async() => {
     des = document.getElementById("description").value;
     lang = document.getElementById("language").value;
 
+    document.querySelector(".btn2").style.display = "block"
+    document.querySelector(".writeButton").style.display = "none"
+
     //Full question for openAi
     question = "Please write " + med + " on " + des + " in " + lang + " language in less than 125 words in its proper format impressive way for academic purpose."
 
@@ -25,4 +28,7 @@ writeButton.addEventListener("click", async() => {
     //Answer to be shown in the textarea ansbox
     let result = await postData('/api', { "question": question })
     ansbox.innerHTML = result.answer
+
+    document.querySelector(".writeButton").style.display = "block"
+    document.querySelector(".btn2").style.display = "none"
 })
