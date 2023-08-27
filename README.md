@@ -3,12 +3,24 @@ SmartPenCraft : AI Content Generator
 
 
 Connect the project with mongoDB Deployment using MongoDB Compass with the following link(URI):
-URI: mongodb+srv://adityaryk:aditya@cluster0.dqf0sje.mongodb.net/
+mongodb+srv://adityaryk:aditya@cluster0.dqf0sje.mongodb.net/
+
+
+(MongoDB cluster or server will not work on a firewall actively blocking connections to/from your local network.)
+So, please connect to a network which is free from any firewall blocking elements.
+
 
 
 Build commands for this project are:
 1-> python main.py
 2-> npm run tailwind
+
+
+
+How to test:
+1->Home Page will get opened.
+2->Click on any of the option depending upon the type of content generation you want to check.
+3->There you will get content after filling the desired input in few seconds.
 
 
 All the features have been added as per the video pitch submission. They are:
