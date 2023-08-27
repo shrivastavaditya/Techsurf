@@ -16,6 +16,10 @@ Build commands for this project are:
 2-> npm run tailwind
 
 
+As I have committed my project which includes my openAI API key. It may get leaked and may not work in future. If my API key stops working, then please use any other openAI API key to see the project.
+openAI API key can be replaced in main.py file. (if required)
+
+
 
 How to test:
 1->Home Page will get opened.
