@@ -22,6 +22,9 @@ writeButton.addEventListener("click", async() => {
     question = "Please write a blog on " + des + " in " + lang + " language in " + ton + " tone in less than 125 words.";
     //alert(question)
 
+
+    ansbox.innerHTML = ""
+
     //Answer to be shown in the textarea ansbox
     let result = await postData('/api', { "question": question })
     ansbox.innerHTML = result.answer

@@ -19,6 +19,9 @@ writeButton.addEventListener("click", async() => {
     question = "Please translate the given content from " + langf + " language to " + langs + " language: " + des;
     //alert(question)
 
+
+    ansbox.innerHTML = ""
+
     //Answer to be shown in the textarea ansbox
     let result = await postData('/api', { "question": question })
     ansbox.innerHTML = result.answer

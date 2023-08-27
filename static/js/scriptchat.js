@@ -11,16 +11,15 @@ async function postData(url = "", data = {}) {
 }
 
 writeButton.addEventListener("click", async() => {
-    med = document.getElementById("socialmedia").value;
     des = document.getElementById("description").value;
-    lang = document.getElementById("language").value;
+    langf = document.getElementById("langf").value;
 
     //Full question for openAi
-    question = "Please write " + med + " on " + des + " in " + lang + " language in less than 125 words in its proper format impressive way for academic purpose."
+    question = des + " in " + langf + " in less than 125 words.";
+    //alert(question)
 
 
     ansbox.innerHTML = ""
-
 
     //Answer to be shown in the textarea ansbox
     let result = await postData('/api', { "question": question })

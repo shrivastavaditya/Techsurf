@@ -8,10 +8,55 @@
     <link rel="stylesheet" href="/static/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <body class=" h-14 bg-gradient-to-r from-violet-500 to-fuchsia-500">
-    <img src="logo2.png" class="float-left" alt="">
+    <header class="bg-[#111827] text-gray-100">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <span class="p-2 m-3 bg-gray-300 inline-block rounded-full bg-opacity-5">
+                    <svg class="stroke-current text-purple-500 w-10 h-10 text-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                    </svg>
+                    </span>
+            </div>
+            <div class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:text-purple-500" href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-purple-500" href="chat.html">Chat</a>
+                    </li>
+                    <li>
+                        <select class="hover:text-purple-500 bg-[#111827] rounded-md w-24 cursor-pointer" onchange="location=this.value;">
+                            <option value="#" src="#">AI Writers</option>
+                            <option value="blog.html">Blogging</option>
+                            <option value="market.html">Marketing Content</option>
+                            <option value="ecom.html">e-Commerce Content</option>
+                            <option value="news.html">News Article</option>
+                            <option value="social.html">Social Media Content</option>
+                            <option value="translate.html">Content Translation</option>
+                            <option value="technical.html">Technical Writing</option>
+                            <option value="academic.html">Academic Writing</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a class="hover:text-purple-500" href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-purple-500" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+                <button class="bg-purple-500 text-white px-5 py-2 rounded-full hover:bg-purple-700">Sign in</button>
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+    <img src="./logo2.png" class="float-left" alt="">
     <div class="text-center w-full text-4xl font-bold mt-10 mb-10">
         SmartPenCraft
     </div>
@@ -20,68 +65,141 @@
 
         <div class="box bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-solid fa-blog"></i>
-            <a href="blog.html" target="_blank" class="go text-lg p-2">Blogging</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="blog.html" target="_blank" class="go text-lg p-2">Blogging</a><br>
+            <a href="blog.html" target="_blank">It can generate engaging blog posts on various topics, helping individuals and businesses maintain consistent and frequent updates on their blogs.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-solid fa-store"></i>
-            <a href="market.html" target="_blank" class="go text-lg p-2">Marketing Content</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="market.html" target="_blank" class="go text-lg p-2">Marketing Content</a><br>
+            <a href="market.html" target="_blank">Instrumental in crafting persuasive ad copies, social media posts, email marketing campaigns, and landing pages, enhancing marketing efforts and driving conversions.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-solid fa-at"></i>
-            <a href="ecom.html" target="_blank" class="go text-lg p-2">E-commerce Content</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="ecom.html" target="_blank" class="go text-lg p-2">E-commerce Content</a><br>
+            <a href="ecom.html" target="_blank">It can create detailed and compelling product descriptions for e-commerce websites, making it easier for consumers to understand and evaluate products.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-regular fa-newspaper"></i>
-            <a href="news.html" target="_blank" class="go text-lg p-2">News Articles</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="news.html" target="_blank" class="go text-lg p-2">News Articles</a><br>
+            <a href="news.html" target="_blank">SmartPenCraft is capable of generating news articles quickly, allowing media outlets to cover breaking news and trending topics more efficiently.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
-            <i class="fa-brands fa-rocketchat"></i>
-            <a href="chat.html" target="_blank" class="go text-lg p-2">Chat</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <i class="far fa-comment"></i>
+            <a href="chat.html" target="_blank" class="go text-lg p-2">Chat</a><br>
+            <a href="chat.html" target="_blank">SmartPenCraft can answer all types of queries.You can also use this sectio to write something which has not been mentioned in the other eight options.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-brands fa-instagram"></i>
-            <a href="social.html" target="_blank" class="go text-lg p-2">Social Media Content</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="social.html" target="_blank" class="go text-lg p-2">Social Media Content</a><br>
+            <a href="social.html" target="_blank">It can produce social media posts, tweets, and captions, enabling individuals and businesses to maintain an active and engaging presence on various platforms.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-solid fa-language"></i>
-            <a href="translate.html" target="_blank" class="go text-lg p-2">Content Translation</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="translate.html" target="_blank" class="go text-lg p-2">Content Translation</a><br>
+            <a href="translate.html" target="_blank">This service facilitates the translation of content between different languages, broadening the reach of content to international audiences.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-solid fa-compass-drafting"></i>
-            <a href="technical.html" target="_blank" class="go text-lg p-2">Technical Writing</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="technical.html" target="_blank" class="go text-lg p-2">Technical Writing</a><br>
+            <a href="technical.html" target="_blank">It can produce technical documentation, manuals, and guides, making it easier for users to understand complex products or processes.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
         <div class="box  bg-purple-500 p-4 rounded-2xl shadow-2xl hover:bg-purple-700 hover:scale-[1.09] transform transition duration-300">
             <i class="fa-solid fa-school"></i>
-            <a href="academic.html" target="_blank" class="go">Academic Writing</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, deleniti ut totam quaerat voluptates harum fugiat non veritatis facilis? Autem.</p>
+            <a href="academic.html" target="_blank" class="go">Academic Writing</a><br>
+            <a href="academic.html" target="_blank">SmartPenCraft can help students and researchers by generating reference materials, summaries, and even preliminary drafts for academic papers.</a><br>
             <a href="#" class="read"><span>Read More</span></a>
         </div>
 
     </div>
+
+    <footer class="mt-10">
+        <div class="p-10 bg-[#111827] text-gray-100">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                    <div class="mb-4">
+                        <h4 class="text-lg pb-4 ">SmartPenCraft</h4>
+                        <p class="text-gray-400">
+                            Jaypee Institute Of <br> Information Technology,<br> Noida, India<br> <br>
+
+                            <strong>Phone :</strong> +91 86904 09766<br>
+                            <strong>Email :</strong> adityaryk123@gmail.com
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="text-lg pb-4">Useful Links</h4>
+                        <ul class="text-gray-400">
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="home.html" target="_blank">Home</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="about.html" target="_blank">About Us</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="service.html" target="_blank">Services</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="term.html" target="_blank">Terms of Services</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="privacy.html" target="_blank">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="text-lg pb-4">Our Services</h4>
+                        <ul class="text-gray-400">
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="chat.html" target="_blank">Chat</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="news.html" target="_blank">News Article</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="social.html" target="_blank">Social Media Content</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="translate.html" target="_blank">Content Translation</a></li>
+                            <li class="pb-4 hover:text-purple-500"><i class="fa fa-chevron-right px-4 text-purple-500"></i><a href="academic.html" target="_blank">Academic Writing</a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="text-lg pb-4">Join Our NewsLetter</h4>
+                        <p class="text-gray-400 pb-2">Join us for new tips, tutorials, and more...</p>
+                        <form action="" class="flex flex-row flex-wrap">
+                            <input type="text" name="" id="" class="text-gray-400 w-2/3 p-2 focus:border-purple-500" placeholder="email@example.com">
+                            <button class="p-2 w-1/3 bg-purple-500 text-white hover:bg-purple-700">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-gray-900 text-gray-500 px-10">
+            <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-around items-center">
+                <div class="text-center">
+                    <div>
+                        <i class="fa fa-copyright"></i> 2023 Copyright <strong><span>SmartPenCraft</span></strong>. All Rights Reserved.
+                    </div>
+                    <div>
+                        Designed by <a href="https://www.linkedin.com/in/aditya-shrivastava-14b6a6222/" class="text-purple-500">Aditya Kumar</a>
+                    </div>
+                </div>
+                <div class="text-center text-xl text-white mb-2">
+                    <a href="mailto:adityaryk123@gmail.com" class="w-10 h-10 rounded-full bg-purple-500 hover:bg-purple-700 mx-1 inline-block pt-1"><i class="fa fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/shrivastava_aditya_/#" class="w-10 h-10 rounded-full bg-purple-500 hover:bg-purple-700 mx-1 inline-block pt-1"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009027675998" class="w-10 h-10 rounded-full bg-purple-500 hover:bg-purple-700 mx-1 inline-block pt-1"><i class="fa fa-facebook"></i></a>
+                    <a href="https://github.com/shrivastavaditya" class="w-10 h-10 rounded-full bg-purple-500 hover:bg-purple-700 mx-1 inline-block pt-1"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aditya-shrivastava-14b6a6222/" class="w-10 h-10 rounded-full bg-purple-500 hover:bg-purple-700 mx-1 inline-block pt-1"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
 
 </body>
 

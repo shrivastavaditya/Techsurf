@@ -18,8 +18,8 @@ writeButton.addEventListener("click", async() => {
     //Full question for openAi
     question = "Please write a news article on " + des + " in " + lang + " language in " + ton + " tone in less than 125 words and impressive title.";
     //alert(question)
-
-    //Answer to be shown in the textarea ansbox
+    ansbox.innerHTML = ""
+        //Answer to be shown in the textarea ansbox
     let result = await postData('/api', { "question": question })
     ansbox.innerHTML = result.answer
 })

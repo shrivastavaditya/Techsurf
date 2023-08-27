@@ -23,7 +23,11 @@ writeButton.addEventListener("click", async() => {
     //alert(question)
 
     //Answer to be shown in the textarea ansbox
+    ansbox.innerHTML = ""
+
+
     let result = await postData('/api', { "question": question })
+        // setTimeout(() => { alert("loading"); }, 10000);
     ansbox.innerHTML = result.answer
 
 
