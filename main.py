@@ -22,6 +22,15 @@ def home():
 def hm():
     return render_template("home.html")
 
+
+@app.route('/about.html')
+def about():
+    return render_template("about.html")
+
+@app.route('/service.html')
+def service():
+    return render_template("service.html")
+
 @app.route('/chat.html')
 def chat():
     qstn = mongo.db.qstn.find({})
