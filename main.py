@@ -3,7 +3,7 @@ from flask_pymongo import PyMongo
 import os
 import openai
 
-openai.api_key = ""
+openai.api_key = skey
 
 
 
